@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/trek"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        android:onClick="gofortrek"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/tr"
+
+
+            >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go for a Trek"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/explorepage"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="explorefunc"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/abc"
+
+            >
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See Other Users' experiences"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/playmusic"
+        android:layout_weight="1"
+        android:onClick="musicfunc"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nat">
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Music"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:alpha="127"
+
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

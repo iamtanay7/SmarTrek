@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PostActivity"
+    tools:showIn="@layout/activity_post">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+   <ImageButton
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:id="@+id/imageBtn"
+       android:adjustViewBounds="true"
+       android:scaleType="centerCrop"
+       android:contextClickable="true"
+
+
+       ></ImageButton>
+
+       <EditText
+           android:id="@+id/TextTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="5dp"
+           android:hint="Post Title"
+           android:padding="10dp"
+           android:textStyle="bold"></EditText>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_marginTop="20dp"
+           android:hint="Post Description"
+           android:id="@+id/textDesc"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp"
+           ></EditText>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/postBtn"
+       android:textColor="#fff"
+       android:text="Post"
+       android:layout_marginRight="5dp"
+       android:layout_marginLeft="5dp"
+       android:padding="10dp"
+       android:layout_marginTop="20dp"
+       ></Button>
+
+       <ProgressBar
+           android:id="@+id/progressss"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
